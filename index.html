@@ -19,6 +19,8 @@
       padding: 40px;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 400px;
     }
     h1 {
       color: #333;
@@ -26,12 +28,37 @@
     p {
       color: #555;
     }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Welcome to Test Group</h1>
     <p>This page was created using my Android phone!</p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </div>
 </body>
 </html>
